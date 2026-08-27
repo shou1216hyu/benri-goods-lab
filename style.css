@@ -1,0 +1,38 @@
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Noto Sans JP",sans-serif;color:#111827;background:#fff;line-height:1.75}
+.wrap{width:min(100% - 32px,980px);margin:auto}
+.header{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.94);backdrop-filter:blur(12px);border-bottom:1px solid #e5e7eb}
+.nav{min-height:60px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.logo{font-weight:800;color:#111827;text-decoration:none}
+.nav nav{display:flex;gap:14px;overflow:auto;white-space:nowrap}
+.nav nav a,.footer a{color:#4b5563;text-decoration:none;font-size:14px}
+.hero{background:linear-gradient(145deg,#111827,#374151);color:white;padding:72px 0 80px}
+.eyebrow{font-size:12px;letter-spacing:.14em;opacity:.75}
+.hero h1{font-size:clamp(38px,11vw,64px);line-height:1.1;margin:12px 0 20px;letter-spacing:-.04em}
+.lead{max-width:650px;color:#e5e7eb;font-size:16px}
+.button{display:inline-block;margin-top:18px;padding:13px 20px;background:white;color:#111827;border-radius:999px;text-decoration:none;font-weight:700}
+.section{padding:58px 0}
+.muted{background:#f3f4f6}
+.section h2{font-size:28px;margin:0 0 24px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.card,.article-card{background:white;border:1px solid #e5e7eb;border-radius:18px;padding:22px;text-decoration:none;color:inherit}
+.card span{font-size:30px}
+.card h3{margin:8px 0 4px}
+.card p,.article-card p{color:#6b7280;margin:0}
+.article-list{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.article-card h3{margin:0 0 8px}
+.article-card a{display:inline-block;margin-top:14px;color:#111827;font-weight:700}
+.tag{display:inline-block;font-size:12px;font-weight:700;background:#e5e7eb;border-radius:999px;padding:3px 9px;margin-bottom:10px}
+.about{max-width:760px}
+.small{font-size:13px;color:#6b7280}
+.footer{border-top:1px solid #e5e7eb;padding:28px 0 50px}
+.footer a{margin-right:14px}
+.footer p{font-size:12px;color:#9ca3af}
+@media(max-width:700px){
+.nav{align-items:flex-start;padding:10px 0;flex-direction:column}
+.cards,.article-list{grid-template-columns:1fr}
+.hero{padding:56px 0 64px}
+.section{padding:46px 0}
+}
+a:focus-visible{outline:3px solid #60a5fa;outline-offset:3px}
